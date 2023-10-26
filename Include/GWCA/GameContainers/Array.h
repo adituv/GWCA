@@ -48,7 +48,7 @@ namespace GW {
             return m_buffer[index];
         }
 
-        bool valid() const { return m_buffer != nullptr; }
+        bool valid() const { return m_buffer != nullptr || m_size == 0; }
         void clear() { m_size = 0; }
 
         uint32_t size()     const { return m_size; }
